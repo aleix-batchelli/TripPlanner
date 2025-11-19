@@ -5,24 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./res/css/styles.css">
+    <link rel="stylesheet" href="./res/css/climate.css">
 </head>
 <body>
     <nav>
         <a class="nav-name" href="./home.html">TripPlanner+</a>
         <div class="flex-center">
-            <a class="nav-button" href="./home.html">Home</a>
-            <a class="nav-button" href="./climate.html">Climate</a>
-            <a class="nav-button" href="./trips.html">Trips</a>
-            <a class="nav-button" href="./ai.html">AI</a>
-            <a class="nav-button" href="./about-us.html">About Us</a>
+            <a class="button" href="./home.html">Home</a>
+            <a class="button" href="./climate.html">Climate</a>
+            <a class="button" href="./trips.html">Trips</a>
+            <a class="button" href="./ai.html">AI</a>
+            <a class="button" href="./about-us.html">About Us</a>
         </div>
     </nav>
 
     <main>
-        <h1>Welcome to Our Climate Page</h1>
-        <p>This is the main content area of the home page.</p>
+        <div class="board">
+            <div class="climate-board">
+                <div class="center row">
+                    <img id="weather-icon" height="100px">
+                    <h1 id="current-tmp"></h1>
+                </div>
+                <canvas id="weather-chart" width="400" height="200">
+                </canvas>
+            </div>
+        </div>
     </main>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="./res/js/climate.js"></script>
 </body>
 </html>

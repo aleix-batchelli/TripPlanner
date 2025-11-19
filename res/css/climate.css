@@ -1,0 +1,10 @@
+.climate-board {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+#current-tmp  {
+    color: white;
+}
