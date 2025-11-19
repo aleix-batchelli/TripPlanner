@@ -1,6 +1,7 @@
 html, body {
     display: flex;
-    background-color: #F9F7F1;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
     flex-direction: column;
     margin: 0;
     padding: 0;
@@ -28,7 +29,11 @@ main {
     padding: 20px;
 }
 
-.nav-button {
+section {
+    margin: 10px;
+}
+
+.button {
     background-color: #3BAFDA;
     color: white;
     padding: 10px 15px;
@@ -36,7 +41,7 @@ main {
     border-width: 1px;
     border-color: white;
     border-radius: 10px;
-    color: white !important; 
+    color: white; 
     text-decoration: none !important;
 }
 
@@ -57,28 +62,75 @@ main {
     text-decoration: none !important;
 }
 
-.nav-button:hover {
+.button:hover {
     transition: background-color 0.3s;
     background-color: white;
     stroke: #3BAFDA;
     color: #3BAFDA;
 }
 
-.flex-center {
-    flex: 1;
+.board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px 0px 20px 0;
+    width: fit-content;
+    padding: 50px;
+}
+
+.box {
+    border-radius: 20px;
+    background-color: red;
+    aspect-ratio: 0.9;
+    width: 10vw;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    will-change: transform;
+}
+
+.box-content {
+  transition: filter 0.3s ease;
+  will-change: filter;
+}
+
+.box:hover .box-content {
+  filter: blur(6px);
+}
+
+.box:hover {
+    transform: scale(1.06);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.3);
+}
+
+.box-text {
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+}
+
+.box:hover .box-text {
+    opacity: 1;
+}
+
+.center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.flex-between {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.column {
+    flex-direction: column;
 }
 
-.flex-around {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.row {
+    flex-direction: row;
 }

@@ -1,0 +1,19 @@
+#box1 {
+    background-color: #3BAFDA;
+}
+
+#box2 {
+    background-color: #2ECC71;
+}
+
+#box3 {
+    background-color: #E67E22;
+}
+
+#box4 {
+    background-color: #F1C40F;
+}
+
+.box-icon {
+    flex: 1;
+}

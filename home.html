@@ -5,23 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./res/css/styles.css">
+    <link rel="stylesheet" href="./res/css/home.css">
 </head>
 <body>
     <nav>
         <a class="nav-name" href="./home.html">TripPlanner+</a>
         <div class="flex-center">
-            <a class="nav-button" href="./home.html">Home</a>
-            <a class="nav-button" href="./climate.html">Climate</a>
-            <a class="nav-button" href="./trips.html">Trips</a>
-            <a class="nav-button" href="./ai.html">AI</a>
-            <a class="nav-button" href="./about-us.html">About Us</a>
+            <a class="button" href="./home.html">Home</a>
+            <a class="button" href="./climate.html">Climate</a>
+            <a class="button" href="./trips.html">Trips</a>
+            <a class="button" href="./ai.html">AI</a>
+            <a class="button" href="./about-us.html">About Us</a>
         </div>
     </nav>
 
     <main>
-        <h1>Welcome to Our Home Page</h1>
-        <p>This is the main content area of the home page.</p>
+        <div class="board">
+            <section class="center column">
+                <h1>Welcome to TripPlanner+</h1>
+                <p>Your interactive and modern platform for personalized travel planning.</p>
+            </section>
+
+            <section class="center column">
+                <h2>Why Use TripPlanner+</h2>
+                <div class="center row">
+                    <div class="center box" id="box1">
+                        <div class="box-content center column">
+                            <img class="box-icon" src="./res/img/trips-icon.png">
+                            <p><strong>Create & Manage Trips</strong></p>
+                        </div>
+                        <span class="box-text">Organize your journeys with destinations, dates, and activities.</span>
+                    </div>
+
+                    <div class="center box" id="box2">
+                        <div class="box-content center column">
+                            <img class="box-icon" src="./res/img/weather-icon.png">
+                            <p><strong>Weather Updates</strong></p>
+                        </div>
+                        <span class="box-text"> Get real-time forecasts powered by OpenWeatherMap.</span>
+                    </div>
+
+                    <div class="center box" id="box3">
+                        <div class="box-content center column">
+                            <img class="box-icon" src="./res/img/ai-icon.png">
+                            <p><strong>AI Suggestions</strong></p>
+                        </div>
+                        <span class="box-text">Discover new destinations and activities with Gemini AI.</span>
+                    </div>
+
+                    <div class="center box" id="box4">
+                        <div class="box-content center column">
+                            <img class="box-icon" src="./res/img/management-icon.png">
+                            <p><strong>Easy Management</strong></p>
+                        </div>
+                        <span class="box-text">Save and edit trips with ease.</span>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="center column">
+                <p>Start planning your next adventure today!</p>
+                <a id="plan-trip-btn" class="button" href="./trips.html">Plan a Trip</a>
+            </section>
+        </div>
     </main>
+
 
 
 </body>
