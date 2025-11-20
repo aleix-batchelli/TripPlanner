@@ -16,8 +16,7 @@ nav {
     justify-content: space-between;
     background-color: #3BAFDA;
     color: white;
-    height: 50px;
-    
+    height: 5vh;
 }
 
 main {
@@ -27,6 +26,15 @@ main {
     flex-direction: column;
     flex: 1;
     padding: 20px;
+}
+
+footer {
+    background-color: white;
+    padding-left: 20px;
+}
+
+footer p {
+    color: black !important;
 }
 
 section {
@@ -56,7 +64,7 @@ section {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    height: 30px;
+    height: inherit;
     margin-left: 15px;
     color: white !important; 
     text-decoration: none !important;
@@ -136,7 +144,7 @@ section {
 .left {
     display: flex;
     justify-content: start;
-    align-items: center;
+    align-items: start;
 }
 
 .column {
@@ -149,4 +157,28 @@ section {
 
 .flex-between {
     justify-content: space-between;
+}
+
+.footer-social .social-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.social-btn.facebook { background-color: #3b5998; }
+.social-btn.twitter { background-color: #1da1f2; }
+.social-btn.instagram { background-color: #e1306c; }
+.social-btn.linkedin { background-color: #0077b5; }
+
+.social-btn:hover {
+  opacity: 0.85;
 }
