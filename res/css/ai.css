@@ -1,6 +1,7 @@
 .chat-container {
   display: flex;
   flex-direction: column;
+  min-width: 450px;
   width: 50vw;
   aspect-ratio: 2;
   margin: 2rem auto;
