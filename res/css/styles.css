@@ -127,10 +127,26 @@ section {
     align-items: center;
 }
 
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.left {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
 .column {
     flex-direction: column;
 }
 
 .row {
     flex-direction: row;
+}
+
+.flex-between {
+    justify-content: space-between;
 }

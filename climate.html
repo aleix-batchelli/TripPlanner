@@ -21,13 +21,65 @@
 
     <main>
         <div class="board">
-            <div class="climate-board">
-                <div class="center row">
+            <div id="weather-board">
+                <div id="weather-board-icon" class="left row">
                     <img id="weather-icon" height="100px">
                     <h1 id="current-tmp"></h1>
                 </div>
-                <canvas id="weather-chart" width="400" height="200">
-                </canvas>
+                <div id="weather-board-info" class="right column">
+                    <h1>Weather</h1>
+                    <p id="day-time">Thursday 11:00</p>
+                    <p id="weather-description">Mostly cloudy</p>
+                </div>
+                
+                <div id="weather-board-chart"><canvas id="weather-chart" width="100%"></canvas></div>
+
+                <div id="weather-board-week" class="center row">
+                    <div id="weather-board-week" class="center row">
+                        <div id="monday" class="box weather-box">
+                            <h1>Monday</h1>
+                            <img src="./res/img/sunny.png" alt="Weather icon">
+                            <p class="temps">-- \ -- °C</p>
+                        </div>
+
+                        <div id="tuesday" class="box weather-box">
+                            <h1>Tuesday</h1>
+                            <img src="./res/img/sunny.png" alt="Weather icon">
+                            <p class="temps">-- \ -- °C</p>
+                        </div>
+
+                        <div id="wednesday" class="box weather-box">
+                            <h1>Wednesday</h1>
+                            <img src="./res/img/sunny.png" alt="Weather icon">
+                            <p class="temps">-- \ -- °C</p>
+                        </div>
+
+                        <div id="thursday" class="box weather-box">
+                            <h1>Thursday</h1>
+                            <img src="./res/img/sunny.png" alt="Weather icon">
+                            <p class="temps">-- \ -- °C</p>
+                        </div>
+
+                        <div id="friday" class="box weather-box">
+                            <h1>Friday</h1>
+                            <img src="./res/img/sunny.png" alt="Weather icon">
+                            <p class="temps">-- \ -- °C</p>
+                        </div>
+
+                        <div id="saturday" class="box weather-box">
+                            <h1>Saturday</h1>
+                            <img src="./res/img/sunny.png" alt="Weather icon">
+                            <p class="temps">-- \ -- °C</p>
+                        </div>
+
+                        <div id="sunday" class="box weather-box">
+                            <h1>Sunday</h1>
+                            <img src="./res/img/sunny.png" alt="Weather icon">
+                            <p class="temps">-- \ -- °C</p>
+                        </div>
+                        </div>
+
+                </div>
             </div>
         </div>
     </main>

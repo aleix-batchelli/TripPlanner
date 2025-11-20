@@ -1,10 +1,72 @@
-.climate-board {
-    flex: 1;
+img {
+    margin: 10px;
+}
+
+h1, p {
+    color: white;
+    margin: 0;
+}
+
+.weather-box {
     display: flex;
     flex-direction: column;
-    background-color: black;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 10vh;
+    aspect-ratio: 0.7;
+    overflow: hidden;
+
 }
+
+.weather-box img {
+    width: 70%;
+    object-fit: contain;
+}
+
+.weather-box h1 {
+    font-size:medium;
+    margin: 0;
+}
+
+
+#weather-board {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  gap: 10px;
+  /*background-color: black;*/
+  padding: 10px;
+}
+
+#weather-board-icon {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#weather-board-info {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#weather-board-chart {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    height: fit-content;
+}
+
+#weather-board-week {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}
+
 
 #current-tmp  {
     color: white;
+}
+
+#weather-chart {
+    height: 20vh;
+    width: 100%;
 }
