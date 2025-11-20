@@ -118,7 +118,8 @@ function setWeekInfo(week) {
       if (iconEl) iconEl.src = getWeatherIcon(dayInfo.code);
 
       const tempsEl = dayEl.querySelector(".temps");
-      if (tempsEl) tempsEl.textContent = `${dayInfo.max} \\ ${dayInfo.min} °C`;
+      
+      if (tempsEl) tempsEl.textContent = `${Number.parseInt(dayInfo.max)} \\ ${Number.parseInt(dayInfo.min)} °C`;
     }
   });
 }
